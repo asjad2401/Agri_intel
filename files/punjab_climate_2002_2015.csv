@@ -1,0 +1,505 @@
+District,Year,Total_Rainfall_mm,Avg_Temp_C
+Chiniot,2002,191.33,27.67
+Chiniot,2003,326.81,26.41
+Chiniot,2004,307.88,27.46
+Chiniot,2005,419.59,25.76
+Chiniot,2006,450.55,26.37
+Chiniot,2007,571.27,26.07
+Chiniot,2008,482.94,26.17
+Chiniot,2009,274.84,26.78
+Chiniot,2010,419.9,26.71
+Chiniot,2011,562.11,25.84
+Chiniot,2012,351.24,25.71
+Chiniot,2013,362.96,26.17
+Chiniot,2014,466.95,25.57
+Chiniot,2015,400.44,25.98
+Lahore,2002,331.81,27.19
+Lahore,2003,535.02,25.76
+Lahore,2004,457.3,26.85
+Lahore,2005,605.72,25.28
+Lahore,2006,724.5,25.72
+Lahore,2007,554.63,25.85
+Lahore,2008,774.78,25.28
+Lahore,2009,383.52,26.43
+Lahore,2010,549.37,26.25
+Lahore,2011,585.38,25.53
+Lahore,2012,442.56,25.31
+Lahore,2013,666.89,25.3
+Lahore,2014,671.03,24.99
+Lahore,2015,580.68,25.37
+Bhakkar,2002,181.24,27.38
+Bhakkar,2003,159.41,26.75
+Bhakkar,2004,224.64,27.55
+Bhakkar,2005,318.98,26.0
+Bhakkar,2006,236.95,27.05
+Bhakkar,2007,434.5,26.41
+Bhakkar,2008,392.89,26.54
+Bhakkar,2009,258.63,26.68
+Bhakkar,2010,538.39,26.49
+Bhakkar,2011,301.07,26.29
+Bhakkar,2012,373.34,25.53
+Bhakkar,2013,293.88,26.36
+Bhakkar,2014,268.58,26.05
+Bhakkar,2015,307.41,26.23
+Gujrat,2002,418.55,26.66
+Gujrat,2003,810.54,24.92
+Gujrat,2004,532.53,26.27
+Gujrat,2005,636.55,24.85
+Gujrat,2006,999.51,25.03
+Gujrat,2007,886.88,24.79
+Gujrat,2008,816.31,24.93
+Gujrat,2009,452.68,25.89
+Gujrat,2010,858.59,25.48
+Gujrat,2011,698.51,24.99
+Gujrat,2012,588.46,24.78
+Gujrat,2013,686.35,24.86
+Gujrat,2014,712.62,24.66
+Gujrat,2015,757.1,24.89
+Mandi Bahauddin,2002,418.55,26.66
+Mandi Bahauddin,2003,810.54,24.92
+Mandi Bahauddin,2004,532.53,26.27
+Mandi Bahauddin,2005,636.55,24.85
+Mandi Bahauddin,2006,999.51,25.03
+Mandi Bahauddin,2007,886.88,24.79
+Mandi Bahauddin,2008,816.31,24.93
+Mandi Bahauddin,2009,452.68,25.89
+Mandi Bahauddin,2010,858.59,25.48
+Mandi Bahauddin,2011,698.51,24.99
+Mandi Bahauddin,2012,588.46,24.78
+Mandi Bahauddin,2013,686.35,24.86
+Mandi Bahauddin,2014,712.62,24.66
+Mandi Bahauddin,2015,757.1,24.89
+Hafizabad,2002,331.36,27.0
+Hafizabad,2003,626.95,25.4
+Hafizabad,2004,473.52,26.64
+Hafizabad,2005,588.91,25.13
+Hafizabad,2006,767.92,25.42
+Hafizabad,2007,716.51,25.31
+Hafizabad,2008,696.64,25.3
+Hafizabad,2009,376.29,26.24
+Hafizabad,2010,644.1,25.97
+Hafizabad,2011,629.81,25.31
+Hafizabad,2012,474.59,25.11
+Hafizabad,2013,565.92,25.25
+Hafizabad,2014,625.32,24.9
+Hafizabad,2015,573.15,25.31
+Khushab,2002,214.44,27.34
+Khushab,2003,206.71,26.51
+Khushab,2004,251.03,27.46
+Khushab,2005,389.69,25.72
+Khushab,2006,360.54,26.55
+Khushab,2007,604.18,25.97
+Khushab,2008,511.48,26.17
+Khushab,2009,315.32,26.48
+Khushab,2010,619.35,26.3
+Khushab,2011,522.93,25.71
+Khushab,2012,445.26,25.4
+Khushab,2013,359.01,26.12
+Khushab,2014,440.54,25.62
+Khushab,2015,390.98,25.97
+Attock,2002,397.47,24.72
+Attock,2003,615.77,23.17
+Attock,2004,392.24,24.84
+Attock,2005,723.55,22.65
+Attock,2006,961.51,22.82
+Attock,2007,1066.34,22.5
+Attock,2008,941.71,22.83
+Attock,2009,545.81,23.51
+Attock,2010,830.58,23.71
+Attock,2011,720.69,23.0
+Attock,2012,757.74,22.23
+Attock,2013,914.48,22.33
+Attock,2014,802.63,22.54
+Attock,2015,959.57,22.64
+Jhang,2002,140.76,27.86
+Jhang,2003,156.58,27.07
+Jhang,2004,237.09,27.88
+Jhang,2005,260.11,26.42
+Jhang,2006,207.39,27.37
+Jhang,2007,369.67,26.89
+Jhang,2008,306.59,27.01
+Jhang,2009,199.13,27.18
+Jhang,2010,354.97,27.11
+Jhang,2011,275.35,26.79
+Jhang,2012,282.13,26.07
+Jhang,2013,257.89,26.76
+Jhang,2014,266.25,26.4
+Jhang,2015,355.71,26.31
+Bahawalnagar,2002,61.98,28.62
+Bahawalnagar,2003,231.48,27.36
+Bahawalnagar,2004,131.21,28.43
+Bahawalnagar,2005,164.43,27.15
+Bahawalnagar,2006,169.25,28.0
+Bahawalnagar,2007,247.98,27.72
+Bahawalnagar,2008,234.6,27.46
+Bahawalnagar,2009,216.75,27.7
+Bahawalnagar,2010,238.99,27.95
+Bahawalnagar,2011,264.38,27.37
+Bahawalnagar,2012,208.98,26.67
+Bahawalnagar,2013,229.28,27.2
+Bahawalnagar,2014,212.98,26.77
+Bahawalnagar,2015,381.51,26.42
+Bahawalpur,2002,45.88,28.74
+Bahawalpur,2003,112.01,27.89
+Bahawalpur,2004,94.78,28.79
+Bahawalpur,2005,158.14,27.41
+Bahawalpur,2006,152.24,28.26
+Bahawalpur,2007,198.8,28.07
+Bahawalpur,2008,189.68,27.94
+Bahawalpur,2009,145.6,28.11
+Bahawalpur,2010,161.22,28.44
+Bahawalpur,2011,186.83,27.92
+Bahawalpur,2012,201.08,27.06
+Bahawalpur,2013,174.55,27.57
+Bahawalpur,2014,100.5,27.41
+Bahawalpur,2015,360.24,26.9
+Chakwal,2002,340.36,25.23
+Chakwal,2003,490.69,23.84
+Chakwal,2004,362.45,25.22
+Chakwal,2005,620.99,23.21
+Chakwal,2006,813.69,23.36
+Chakwal,2007,942.41,23.2
+Chakwal,2008,780.75,23.55
+Chakwal,2009,435.39,24.09
+Chakwal,2010,720.35,24.23
+Chakwal,2011,684.99,23.49
+Chakwal,2012,607.96,22.87
+Chakwal,2013,698.11,23.1
+Chakwal,2014,699.01,23.03
+Chakwal,2015,768.92,23.22
+Dera Ghazi Khan,2002,104.92,27.12
+Dera Ghazi Khan,2003,111.63,26.36
+Dera Ghazi Khan,2004,193.8,27.17
+Dera Ghazi Khan,2005,175.3,25.77
+Dera Ghazi Khan,2006,146.77,26.76
+Dera Ghazi Khan,2007,241.21,26.34
+Dera Ghazi Khan,2008,191.84,26.37
+Dera Ghazi Khan,2009,125.75,26.55
+Dera Ghazi Khan,2010,207.41,26.58
+Dera Ghazi Khan,2011,122.62,26.37
+Dera Ghazi Khan,2012,166.32,25.39
+Dera Ghazi Khan,2013,193.36,26.08
+Dera Ghazi Khan,2014,142.99,25.84
+Dera Ghazi Khan,2015,249.2,25.76
+Faisalabad,2002,145.0,28.06
+Faisalabad,2003,287.56,26.77
+Faisalabad,2004,247.57,27.88
+Faisalabad,2005,321.19,26.26
+Faisalabad,2006,329.84,26.99
+Faisalabad,2007,423.6,26.78
+Faisalabad,2008,376.8,26.71
+Faisalabad,2009,256.24,27.11
+Faisalabad,2010,334.16,27.17
+Faisalabad,2011,424.92,26.45
+Faisalabad,2012,286.87,26.12
+Faisalabad,2013,310.92,26.61
+Faisalabad,2014,369.93,26.05
+Faisalabad,2015,385.6,26.21
+Gujranwala,2002,410.62,26.75
+Gujranwala,2003,750.5,25.09
+Gujranwala,2004,545.98,26.32
+Gujranwala,2005,643.92,24.97
+Gujranwala,2006,871.49,25.25
+Gujranwala,2007,743.67,25.14
+Gujranwala,2008,896.56,24.84
+Gujranwala,2009,438.36,26.05
+Gujranwala,2010,761.73,25.67
+Gujranwala,2011,671.83,25.06
+Gujranwala,2012,537.13,24.94
+Gujranwala,2013,762.68,24.81
+Gujranwala,2014,769.92,24.64
+Gujranwala,2015,710.51,24.95
+Jhelum,2002,404.62,25.01
+Jhelum,2003,718.92,23.29
+Jhelum,2004,472.14,24.78
+Jhelum,2005,737.71,22.86
+Jhelum,2006,1071.99,23.12
+Jhelum,2007,1038.91,22.77
+Jhelum,2008,876.96,23.15
+Jhelum,2009,505.51,23.92
+Jhelum,2010,846.58,23.76
+Jhelum,2011,750.17,23.19
+Jhelum,2012,684.38,22.64
+Jhelum,2013,808.2,22.72
+Jhelum,2014,770.08,22.72
+Jhelum,2015,885.52,22.96
+Kasur,2002,259.53,27.56
+Kasur,2003,431.5,26.15
+Kasur,2004,375.72,27.23
+Kasur,2005,503.89,25.68
+Kasur,2006,560.15,26.22
+Kasur,2007,439.97,26.42
+Kasur,2008,647.73,25.68
+Kasur,2009,345.08,26.71
+Kasur,2010,461.04,26.62
+Kasur,2011,517.89,25.88
+Kasur,2012,388.35,25.59
+Kasur,2013,545.55,25.78
+Kasur,2014,560.57,25.37
+Kasur,2015,504.17,25.64
+Khanewal,2002,105.5,28.16
+Khanewal,2003,131.6,27.38
+Khanewal,2004,217.1,28.15
+Khanewal,2005,198.06,26.8
+Khanewal,2006,153.47,27.8
+Khanewal,2007,271.53,27.41
+Khanewal,2008,210.42,27.51
+Khanewal,2009,150.03,27.58
+Khanewal,2010,213.97,27.71
+Khanewal,2011,183.38,27.4
+Khanewal,2012,201.19,26.53
+Khanewal,2013,209.81,27.17
+Khanewal,2014,204.65,26.82
+Khanewal,2015,355.24,26.47
+Layyah,2002,141.53,27.79
+Layyah,2003,136.88,27.13
+Layyah,2004,224.39,27.88
+Layyah,2005,248.89,26.48
+Layyah,2006,188.19,27.53
+Layyah,2007,344.79,26.93
+Layyah,2008,291.3,27.07
+Layyah,2009,188.42,27.2
+Layyah,2010,354.24,27.08
+Layyah,2011,221.53,26.94
+Layyah,2012,270.16,26.07
+Layyah,2013,243.49,26.81
+Layyah,2014,226.29,26.53
+Layyah,2015,304.79,26.53
+Lodhran,2002,59.61,28.58
+Lodhran,2003,105.2,27.76
+Lodhran,2004,133.83,28.58
+Lodhran,2005,167.14,27.19
+Lodhran,2006,140.74,28.17
+Lodhran,2007,204.84,27.89
+Lodhran,2008,167.84,27.85
+Lodhran,2009,134.71,27.97
+Lodhran,2010,144.33,28.34
+Lodhran,2011,158.54,27.84
+Lodhran,2012,163.72,26.96
+Lodhran,2013,166.01,27.57
+Lodhran,2014,114.82,27.27
+Lodhran,2015,360.38,26.73
+Mianwali,2002,251.96,26.3
+Mianwali,2003,229.61,25.62
+Mianwali,2004,245.33,26.55
+Mianwali,2005,403.63,24.8
+Mianwali,2006,423.82,25.57
+Mianwali,2007,608.77,25.1
+Mianwali,2008,533.85,25.16
+Mianwali,2009,356.27,25.43
+Mianwali,2010,650.61,25.24
+Mianwali,2011,513.25,24.85
+Mianwali,2012,505.17,24.09
+Mianwali,2013,412.15,25.12
+Mianwali,2014,490.96,24.52
+Mianwali,2015,454.84,24.95
+Multan,2002,75.27,28.5
+Multan,2003,101.62,27.74
+Multan,2004,185.93,28.49
+Multan,2005,160.17,27.18
+Multan,2006,127.71,28.21
+Multan,2007,218.29,27.78
+Multan,2008,170.23,27.81
+Multan,2009,119.59,27.94
+Multan,2010,146.91,28.16
+Multan,2011,146.82,27.81
+Multan,2012,168.44,26.87
+Multan,2013,181.26,27.54
+Multan,2014,150.66,27.25
+Multan,2015,315.37,26.91
+Muzaffargarh,2002,75.27,28.5
+Muzaffargarh,2003,101.62,27.74
+Muzaffargarh,2004,185.93,28.49
+Muzaffargarh,2005,160.17,27.18
+Muzaffargarh,2006,127.71,28.21
+Muzaffargarh,2007,218.29,27.78
+Muzaffargarh,2008,170.23,27.81
+Muzaffargarh,2009,119.59,27.94
+Muzaffargarh,2010,146.91,28.16
+Muzaffargarh,2011,146.82,27.81
+Muzaffargarh,2012,168.44,26.87
+Muzaffargarh,2013,181.26,27.54
+Muzaffargarh,2014,150.66,27.25
+Muzaffargarh,2015,315.37,26.91
+Nankana Sahib,2002,251.51,27.44
+Nankana Sahib,2003,464.89,26.0
+Nankana Sahib,2004,397.86,27.12
+Nankana Sahib,2005,530.9,25.47
+Nankana Sahib,2006,584.49,26.0
+Nankana Sahib,2007,536.58,26.0
+Nankana Sahib,2008,565.32,25.81
+Nankana Sahib,2009,324.27,26.61
+Nankana Sahib,2010,453.85,26.52
+Nankana Sahib,2011,525.08,25.77
+Nankana Sahib,2012,380.62,25.51
+Nankana Sahib,2013,464.5,25.78
+Nankana Sahib,2014,525.77,25.29
+Nankana Sahib,2015,458.03,25.7
+Narowal,2002,466.1,26.67
+Narowal,2003,777.53,25.12
+Narowal,2004,565.57,26.25
+Narowal,2005,660.36,25.01
+Narowal,2006,947.52,25.32
+Narowal,2007,780.75,25.15
+Narowal,2008,1073.99,24.68
+Narowal,2009,479.41,26.03
+Narowal,2010,844.81,25.63
+Narowal,2011,757.97,24.93
+Narowal,2012,585.07,24.99
+Narowal,2013,927.35,24.71
+Narowal,2014,892.97,24.6
+Narowal,2015,895.9,24.69
+Okara,2002,132.04,28.14
+Okara,2003,336.73,26.66
+Okara,2004,233.45,27.87
+Okara,2005,293.72,26.4
+Okara,2006,307.36,27.13
+Okara,2007,338.67,27.05
+Okara,2008,384.29,26.62
+Okara,2009,280.13,27.14
+Okara,2010,352.68,27.17
+Okara,2011,385.85,26.57
+Okara,2012,298.31,26.1
+Okara,2013,313.83,26.61
+Okara,2014,365.66,26.05
+Okara,2015,404.75,26.09
+Pakpattan,2002,104.61,28.32
+Pakpattan,2003,264.33,26.99
+Pakpattan,2004,185.83,28.15
+Pakpattan,2005,223.6,26.68
+Pakpattan,2006,231.6,27.51
+Pakpattan,2007,311.87,27.27
+Pakpattan,2008,290.8,27.12
+Pakpattan,2009,244.5,27.36
+Pakpattan,2010,276.92,27.54
+Pakpattan,2011,319.59,26.93
+Pakpattan,2012,237.17,26.4
+Pakpattan,2013,270.46,26.92
+Pakpattan,2014,287.54,26.41
+Pakpattan,2015,381.79,26.33
+Rahim Yar Khan,2002,21.25,29.0
+Rahim Yar Khan,2003,100.6,28.19
+Rahim Yar Khan,2004,41.18,29.16
+Rahim Yar Khan,2005,92.31,27.93
+Rahim Yar Khan,2006,142.03,28.66
+Rahim Yar Khan,2007,174.03,28.45
+Rahim Yar Khan,2008,244.09,28.1
+Rahim Yar Khan,2009,138.83,28.46
+Rahim Yar Khan,2010,172.56,28.76
+Rahim Yar Khan,2011,219.4,28.18
+Rahim Yar Khan,2012,301.68,27.32
+Rahim Yar Khan,2013,192.38,27.92
+Rahim Yar Khan,2014,85.4,27.88
+Rahim Yar Khan,2015,244.32,27.57
+Rajanpur,2002,19.93,28.16
+Rajanpur,2003,114.12,27.33
+Rajanpur,2004,69.24,28.24
+Rajanpur,2005,74.7,27.12
+Rajanpur,2006,106.77,27.88
+Rajanpur,2007,166.3,27.55
+Rajanpur,2008,200.33,27.31
+Rajanpur,2009,124.18,27.57
+Rajanpur,2010,149.79,27.94
+Rajanpur,2011,190.71,27.29
+Rajanpur,2012,265.94,26.34
+Rajanpur,2013,190.92,27.12
+Rajanpur,2014,62.83,27.07
+Rajanpur,2015,181.42,26.91
+Rawalpindi,2002,423.05,24.5
+Rawalpindi,2003,794.35,22.76
+Rawalpindi,2004,475.0,24.38
+Rawalpindi,2005,840.89,22.32
+Rawalpindi,2006,1117.49,22.74
+Rawalpindi,2007,1127.96,22.37
+Rawalpindi,2008,1038.81,22.52
+Rawalpindi,2009,646.94,23.19
+Rawalpindi,2010,937.93,23.31
+Rawalpindi,2011,823.2,22.64
+Rawalpindi,2012,833.8,22.04
+Rawalpindi,2013,990.53,22.2
+Rawalpindi,2014,889.54,22.28
+Rawalpindi,2015,1127.14,22.33
+Sahiwal,2002,104.61,28.32
+Sahiwal,2003,264.33,26.99
+Sahiwal,2004,185.83,28.15
+Sahiwal,2005,223.6,26.68
+Sahiwal,2006,231.6,27.51
+Sahiwal,2007,311.87,27.27
+Sahiwal,2008,290.8,27.12
+Sahiwal,2009,244.5,27.36
+Sahiwal,2010,276.92,27.54
+Sahiwal,2011,319.59,26.93
+Sahiwal,2012,237.17,26.4
+Sahiwal,2013,270.46,26.92
+Sahiwal,2014,287.54,26.41
+Sahiwal,2015,381.79,26.33
+Sargodha,2002,209.91,27.6
+Sargodha,2003,259.39,26.54
+Sargodha,2004,280.69,27.51
+Sargodha,2005,420.39,25.8
+Sargodha,2006,451.1,26.43
+Sargodha,2007,701.03,25.87
+Sargodha,2008,551.37,26.15
+Sargodha,2009,296.16,26.72
+Sargodha,2010,544.93,26.51
+Sargodha,2011,661.54,25.66
+Sargodha,2012,419.08,25.63
+Sargodha,2013,379.34,26.23
+Sargodha,2014,521.68,25.61
+Sargodha,2015,451.88,26.01
+Sheikhupura,2002,331.81,27.19
+Sheikhupura,2003,535.02,25.76
+Sheikhupura,2004,457.3,26.85
+Sheikhupura,2005,605.72,25.28
+Sheikhupura,2006,724.5,25.72
+Sheikhupura,2007,554.63,25.85
+Sheikhupura,2008,774.78,25.28
+Sheikhupura,2009,383.52,26.43
+Sheikhupura,2010,549.37,26.25
+Sheikhupura,2011,585.38,25.53
+Sheikhupura,2012,442.56,25.31
+Sheikhupura,2013,666.89,25.3
+Sheikhupura,2014,671.03,24.99
+Sheikhupura,2015,580.68,25.37
+Sialkot,2002,478.5,26.63
+Sialkot,2003,969.36,24.86
+Sialkot,2004,610.66,26.17
+Sialkot,2005,642.54,24.96
+Sialkot,2006,1009.84,25.16
+Sialkot,2007,909.31,24.95
+Sialkot,2008,956.26,24.82
+Sialkot,2009,497.59,25.93
+Sialkot,2010,984.17,25.45
+Sialkot,2011,726.61,24.95
+Sialkot,2012,634.9,24.95
+Sialkot,2013,815.59,24.87
+Sialkot,2014,827.57,24.75
+Sialkot,2015,878.15,24.84
+Toba Tek Singh,2002,138.65,28.03
+Toba Tek Singh,2003,207.86,26.99
+Toba Tek Singh,2004,233.63,27.95
+Toba Tek Singh,2005,280.15,26.43
+Toba Tek Singh,2006,261.49,27.28
+Toba Tek Singh,2007,417.25,26.85
+Toba Tek Singh,2008,341.28,26.94
+Toba Tek Singh,2009,225.75,27.21
+Toba Tek Singh,2010,344.78,27.23
+Toba Tek Singh,2011,373.93,26.65
+Toba Tek Singh,2012,282.53,26.15
+Toba Tek Singh,2013,282.16,26.75
+Toba Tek Singh,2014,325.91,26.26
+Toba Tek Singh,2015,383.3,26.29
+Vehari,2002,78.63,28.44
+Vehari,2003,166.62,27.42
+Vehari,2004,160.0,28.34
+Vehari,2005,173.74,26.99
+Vehari,2006,154.33,27.91
+Vehari,2007,234.53,27.63
+Vehari,2008,191.35,27.62
+Vehari,2009,174.51,27.67
+Vehari,2010,181.1,28.03
+Vehari,2011,197.99,27.51
+Vehari,2012,175.71,26.72
+Vehari,2013,206.49,27.28
+Vehari,2014,182.16,26.87
+Vehari,2015,378.86,26.39

@@ -1,0 +1,103 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{listings} % For code snippets
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Agri-Intel: District-Wise Yield Optimization System using Heterogeneous Data Sources}
+
+\author{\IEEEauthorblockN{Student Name 1}
+\IEEEauthorblockA{\textit{Dept. of Computing} \\
+\textit{NUST-SEECS}\\
+ID: 123456}
+\and
+\IEEEauthorblockN{Student Name 2}
+\IEEEauthorblockA{\textit{Dept. of Computing} \\
+\textit{NUST-SEECS}\\
+ID: 654321}
+\and
+\IEEEauthorblockN{Student Name 3}
+\IEEEauthorblockA{\textit{Dept. of Computing} \\
+\textit{NUST-SEECS}\\
+ID: 789012}
+}
+
+\maketitle
+
+\begin{abstract}
+% Write 150 words summarizing:
+% 1. The problem (Inefficient fertilizer use in Punjab).
+% 2. The solution (ML model integrating Satellite, Climate, and Govt data).
+% 3. Results (RMSE score, key findings).
+% 4. The PoC (Interactive Streamlit Dashboard).
+\end{abstract}
+
+\section{Introduction}
+% Discuss the importance of Food Security (Theme T4).
+% Mention that fertilizer misuse leads to poor yield and environmental damage.
+% State your goal: A decision support system for farmers.
+
+\section{Problem Definition}
+% Formalize the problem: 
+% "Given historical weather W, crop health H, and inputs I, predict Yield Y and optimize I for max Y."
+% Stakeholders: Farmers, Policymakers.
+
+\section{Data Acquisition \& Preparation}
+\label{sec:data}
+% This is a critical section. Mention all 4 sources.
+
+\subsection{Data Sources}
+\begin{itemize}
+    \item \textbf{Agricultural Statistics:} Punjab Crop Reporting Service (2002-2015). Target variable: Wheat Yield (Tons/Acre).
+    \item \textbf{Remote Sensing:} MODIS NDVI (MOD13A2) via Google Earth Engine. 16-day composites aggregated to seasonal means.
+    \item \textbf{Climate Data:} NASA POWER API. Daily rainfall and temperature aggregated to seasonal totals.
+    \item \textbf{Spatial Boundaries:} GeoJSON from Kaggle for district-level aggregation.
+\end{itemize}
+
+\subsection{Preprocessing \& Integration}
+% Mention how you cleaned district names (regex) and merged on 'District_Year_ID'.
+% Mention handling missing values or outliers.
+
+\section{Methodology}
+% Describe your ML Pipeline.
+\subsection{Feature Engineering}
+% List features: Fertilizer_Usage, Mean_NDVI, Total_Rainfall, Avg_Temp.
+
+\subsection{Models}
+% Mention you trained Baseline (Mean), Random Forest, and Gradient Boosting.
+
+\section{Experimental Setup}
+% Train/Test Split (80/20).
+% Evaluation Metric: RMSE (Root Mean Squared Error).
+
+\section{Results \& Analysis}
+
+\subsection{Model Comparison}
+% Insert a table here comparing RMSE of Baseline vs GB Model.
+
+\subsection{Feature Importance}
+% Insert your feature_importance.png here
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=3in]{feature_importance.png}}
+\caption{Impact of features on Wheat Yield.}
+\label{fig:feat_imp}
+\end{figure}
+
+\section{Proof of Concept}
+% Describe the Streamlit App.
+% Mention the "What-If" Simulation.
+% Insert a screenshot of your dashboard.
+
+\section{Conclusion}
+% Summarize the impact.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

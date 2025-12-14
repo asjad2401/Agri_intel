@@ -88,7 +88,7 @@ plt.scatter(y_test, y_pred_gb, alpha=0.7)
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'r--', lw=2)
 plt.xlabel("Actual Yield")
 plt.ylabel("Predicted Yield")
-plt.title("Error Analysis: Actual vs Predicted (GB Model)")
+plt.title("Error Analysis: Actual vs Predicted ")
 plt.savefig("error_analysis.png") # Save for Report
 print(" Error Analysis Plot saved as 'error_analysis.png'")
 
@@ -96,4 +96,3 @@ print(" Error Analysis Plot saved as 'error_analysis.png'")
 # We will use the Gradient Boosting model as our final "Product"
 joblib.dump(gb_model, "final_model.pkl")
 print("\n SUCCESS! Trained model saved as 'final_model.pkl'.")
-print(" You are ready to build the Streamlit App (Option B).")

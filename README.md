@@ -8,8 +8,8 @@ Agri-Intel is a machine learning-based decision support system designed to optim
 * `app.py`: The main Streamlit application (Proof of Concept Dashboard).
 * `final_model.pkl`: The trained Gradient Boosting Machine Learning model.
 * `final_dataset_ml_ready.csv`: The merged master dataset used for predictions.
-* `punjab_districts_cleaned.geojson`: Spatial data for the interactive map.
-* `src/`: Folder containing data collection and processing scripts.
+* `files/punjab_districts_cleaned.geojson`: Spatial data for the interactive map.
+* `Data_pipeline.ipynb`: Notebook containing data collection and processing scripts.
 * `requirements.txt`: List of Python dependencies.
 
 ##  Installation
@@ -35,4 +35,4 @@ Analyze Yield: Adjust the sliders (Fertilizer, NDVI, Rainfall) and click "Analyz
 
 Optimization Simulation: Scroll down to the "What-If" section to see the AI's recommendation for maximizing yield based on your inputs.
 
-Developed by: [Your Names Here]
+Developed by: Muhammad Asjad

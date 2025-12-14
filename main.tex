@@ -27,7 +27,7 @@ Islamabad, Pakistan \\
 \maketitle
 
 \begin{abstract}
-Sustainable agriculture (Theme T4) is critical for food security in Pakistan. This project, \textit{Agri-Intel}, addresses the lack of data-driven decision-making in fertilizer application. We integrated four heterogeneous data sources—government agricultural statistics, satellite imagery (MODIS NDVI), climate reanalysis data (NASA POWER), and geospatial vector data—to build a machine learning pipeline. Using a Gradient Boosting Regressor, we achieved high accuracy in predicting Wheat yield at the district level. Furthermore, we developed an end-to-end Proof of Concept (PoC) using Streamlit, featuring a geospatial dashboard and a ``What-If'' simulation engine that recommends optimal fertilizer levels to maximize yield. This system empowers stakeholders to move from reactive farming to predictive, precision agriculture.
+Sustainable agriculture (Theme T4) is critical for food security in Pakistan. This project, \textit{Agri-Intel}, addresses the lack of data-driven decision-making in fertilizer application. I integrated four heterogeneous data sources—government agricultural statistics, satellite imagery (MODIS NDVI), climate reanalysis data (NASA POWER), and geospatial vector data—to build a machine learning pipeline. Using a Gradient Boosting Regressor, I achieved high accuracy in predicting Wheat yield at the district level. Furthermore, I developed an end-to-end Proof of Concept (PoC) using Streamlit, featuring a geospatial dashboard and a ``What-If'' simulation engine that recommends optimal fertilizer levels to maximize yield. This system empowers stakeholders to move from reactive farming to predictive, precision agriculture.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -35,7 +35,7 @@ Precision Agriculture, Machine Learning, Remote Sensing, NDVI, Yield Prediction,
 \end{IEEEkeywords}
 
 \section{Introduction}
-Agriculture is the backbone of Pakistan's economy, yet it suffers from inefficiency. Farmers often apply fertilizer based on intuition rather than precise environmental requirements, leading to either yield gaps or environmental degradation through runoff. [cite_start]Theme T4 (Sustainable Agriculture \& Food Security) highlights the need for intelligent systems to mitigate these risks[cite: 82, 85].
+Agriculture is the backbone of Pakistan's economy, yet it suffers from inefficiency. Farmers often apply fertilizer based on intuition rather than precise environmental requirements, leading to either yield gaps or environmental degradation through runoff. Theme T4.
 
 Existing solutions often look at single variables (e.g., only weather). Our project, \textit{Agri-Intel}, proposes a holistic approach by fusing tabular, spatial, and temporal data. We aim to answer the critical question: \textit{``What is the optimal fertilizer usage for a specific district given its current soil, crop health, and weather conditions?''}
 
@@ -45,18 +45,18 @@ The core problem is the \textit{optimization of input resources} under uncertain
 This problem is currently under-addressed because data resides in silos: weather is in API logs, crop health is in satellite rasters, and yield is in government PDF/CSV reports. Our solution breaks these silos to provide actionable intelligence.
 
 \section{Data Curation \& Integration}
-We curated a dataset spanning 14 years (2002--2015) covering all districts of Punjab. [cite_start]The project satisfies the requirement of using 3-4 heterogeneous sources[cite: 110]:
+We curated a dataset spanning 14 years (2002--2015) covering all districts of Punjab. The project satisfies the requirement of using 3-4 heterogeneous sources:
 
 \subsection{Data Sources}
 \begin{enumerate}
-    \item \textbf{Agricultural Statistics (Tabular):} Sourced from the Punjab Crop Reporting Service. Contains annual records of Wheat production, area sown, and fertilizer usage.
-    \item \textbf{Remote Sensing (Raster):} MODIS Terra (MOD13A2) 16-day composite data. [cite_start]We extracted the Mean NDVI (Normalized Difference Vegetation Index) for the growing season (Oct--Mar) to proxy crop vigor[cite: 90].
-    \item \textbf{Climate Data (Time-Series API):} Sourced from NASA POWER. [cite_start]We fetched daily precipitation and temperature data, aggregated into seasonal totals (Total Rainfall) and averages (Avg Temp)[cite: 57].
-    \item \textbf{Geospatial Boundaries (Vector):} GeoJSON files of Pakistan's administrative districts were used to spatially aggregate the satellite and climate data.
+    \item \textbf{Agricultural Statistics (Tabular):} Sourced from OpenData Pakistan. Contains annual records of Wheat production, area sown, and fertilizer usage.
+    \item \textbf{Remote Sensing:} Google Earth Engine. We extracted the Mean NDVI (Normalized Difference Vegetation Index) for the growing season (Oct--Mar) to proxy crop vigor.
+    \item \textbf{Climate Data (Time-Series API):} Sourced from NASA POWER. We fetched daily precipitation and temperature data, aggregated into seasonal totals (Total Rainfall) and averages (Avg Temp).
+    \item \textbf{Geospatial Boundaries (Vector):} GeoJSON files of Pakistan's administrative districts were used to spatially aggregate the satellite and climate data from kaggle.
 \end{enumerate}
 
 \subsection{Integration Strategy}
-A major challenge was the lack of a common key. We developed a robust cleaning pipeline to standardize district names (e.g., removing suffixes like ``District'' or ``Divn''). We calculated the geometric centroids of district polygons to query the NASA API. Finally, all sources were merged into a single master dataset keyed by \texttt{District\_ID} and \texttt{Year}.
+A major challenge was the lack of a common key. I developed a robust cleaning pipeline to standardize district names (e.g., removing suffixes like ``District'' or ``Divn''). I calculated the geometric centroids of district polygons to query the NASA API. Finally, all sources were merged into a single master dataset keyed by \texttt{District\_ID} and \texttt{Year}.
 
 \section{Methodology}
 
@@ -79,7 +79,7 @@ We implemented a pipeline comparing three models:
 \section{Results \& Analysis}
 
 \subsection{Model Performance}
-The Gradient Boosting model outperformed the baseline significantly, capturing the complex interaction between weather stress and fertilizer response.
+The Random Forest model outperformed the baseline significantly, capturing the complex interaction between weather stress and fertilizer response.
 
 \begin{table}[htbp]
 \caption{Model Performance Comparison}
@@ -98,27 +98,40 @@ Gradient Boosting & 0.32 & 0.65 \\
 \end{table}
 
 \subsection{Feature Importance}
-As shown in Fig. \ref{fig:feat_imp}, Fertilizer Usage and Area Sown were dominant predictors, but Environmental factors (NDVI and Temperature) played a crucial role in refining the predictions, validating our multi-source approach.
+As shown in Fig. \ref{fig:feat_imp}, 
+Fertilizer Usage and Avg\_Temp\_C were dominant predictors, but Environmental factors (NDVI and Temperature) played a crucial role in refining the predictions, validating our multi-source approach.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.9\linewidth]{feature_importance.png}}
 \caption{Feature Importance Plot showing drivers of Wheat Yield.}
 \label{fig:feat_imp}
+
+\centerline{\includegraphics[width=0.9\linewidth]{error_analysis.png}}
+\caption{Error Analysis of the Yield Prediction Model.}
+\label{fig:error}
 \end{figure}
 
+
 \section{Proof of Concept (PoC)}
-[cite_start]We developed a fully functional web application using \textbf{Streamlit} and \textbf{Folium}[cite: 128].
+I developed a fully functional web application using \textbf{Streamlit} and \textbf{Folium}.
 
 \subsection{Interactive Geospatial Dashboard}
-The dashboard (Fig. \ref{fig:error}) features an interactive map of Punjab. Users can select a district, and the system automatically fetches historical defaults and real-time weather context (via OpenWeatherMap API) for that location.
+The dashboard (Fig. \ref{fig:img}) features an interactive map of Punjab. Users can select a district, and the system automatically fetches historical defaults and real-time weather context (via OpenWeatherMap API) for that location.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.9\linewidth]{image.png}}
+\caption{PoC}
+\label{fig:img}
+\end{figure}
+
 
 \subsection{Optimization Engine}
 A key innovation is the ``What-If'' Simulation. The system generates a yield response curve (varying fertilizer from 0 to 300k tons) and identifies the global maximum. It then provides a specific recommendation (e.g., \textit{``Increase fertilizer by 50 tons to gain 1.2 tons/acre''}), directly supporting the decision-making process.
 
 \begin{figure}[htbp]
-\centerline{\includegraphics[width=0.9\linewidth]{error_analysis.png}}
-\caption{PoC: Error Analysis of the Yield Prediction Model.}
-\label{fig:error}
+\centerline{\includegraphics[width=0.9\linewidth]{image1.png}}
+\caption{PoC}
+\label{fig:img1}
 \end{figure}
 
 \section{Conclusion}
@@ -130,6 +143,7 @@ Agri-Intel demonstrates that integrating open-source satellite and climate data 
 \bibitem{b2} geojson data for boundaries of districts of punjab from kaggle  
 https://www.kaggle.com/datasets/idrisonkaggle/pakistan-districts-and-province-boundaries?resource=download  
 \bibitem{b3} Google Earth Engine
+\bibitem{b4} NASA Power API
 \end{thebibliography}
 
 \end{document}

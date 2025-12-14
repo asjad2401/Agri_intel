@@ -8,20 +8,20 @@ import folium
 from streamlit_folium import st_folium
 import geopandas as gpd
 import requests
-
+import os 
 # --- 1. CONFIGURATION & SETUP ---
 st.set_page_config(page_title="Agri-Intel: Real-Time Dashboard", layout="wide")
 
-# REPLACE THIS WITH YOUR OPENWEATHERMAP API KEY
-API_KEY = "a80d092216e475bd51118c7ea67d7dd1" 
+key_climate = os.getenv("keyclimate")
+API_KEY = key_climate
 
 # Load Model & Data
 @st.cache_resource
 def load_assets():
     try:
         model = joblib.load("final_model.pkl")
-        data = pd.read_csv("final_dataset_ml_ready.csv")
-        gdf = gpd.read_file("punjab_districts_cleaned.geojson")
+        data = pd.read_csv("files/final_dataset_ml_ready.csv")
+        gdf = gpd.read_file("files/punjab_districts_cleaned.geojson")
         return model, data, gdf
     except Exception as e:
         st.error(f"Error loading assets: {e}")

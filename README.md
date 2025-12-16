@@ -28,7 +28,7 @@ Run the following command:
 `streamlit run app.py`
 The dashboard will automatically open in your browser at http://localhost:8501.
 or visit 
-`https://asjad2401-agri-intel-streamlitapp-apuzxg.streamlit.app/`
+https://asjad2401-agri-intel-streamlitapp-apuzxg.streamlit.app/
 
 ## Usage Guide
 Select District: Choose a district from the sidebar to load its historical soil and climate defaults.
